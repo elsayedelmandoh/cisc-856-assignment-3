@@ -28,7 +28,7 @@ SARSA updates the action-value function using the action *actually taken* in the
 Q(S, A) ← Q(S, A) + α [R + γ Q(S', A') − Q(S, A)]
 ```
 
-Here A' is chosen by the same ε-greedy policy that selects A. Because both the behaviour policy and the target policy are identical, SARSA learns action values conditioned on the exploration policy — it learns the value of the policy it is actually following.
+A' is chosen by the same ε-greedy policy that selects A. Because both the behaviour policy and the target policy are identical, SARSA learns action values conditioned on the exploration policy — it learns the value of the policy it is actually following.
 
 #### 2.2 Q-Learning (Off-Policy TD Control)
 
