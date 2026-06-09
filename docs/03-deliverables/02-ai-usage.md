@@ -1,49 +1,46 @@
-# ai usage disclosure
+# AI Usage Disclosure
 
-## cisc 856 assignment 2 - monte carlo methods in rl
+## CISC 856 Assignment 3 - Implementing and Analyzing TD Algorithms
 
-elsayed elmandouh - 20596379
+**elsayed elmandoua - 20596379**
 
 ---
 
-## 1. tool used
+## 1. Tool Used
 
-| tool | purpose |
+| Tool | Purpose |
 |------|---------|
-| deepseek | code debugging, algorithm verification, report editing (formatting, tables, structure) |
+| Deepseek | Assistance and review only, code debugging suggestions, algorithm verification, config checks, report text editing (formatting, tables, structure) |
 
 ---
 
-## 2. how genai was used
+## 2. How GenAI Was Used
 
-### 2.1. code assistance
+### 2.1 Code Assistance (Review and Debugging Only)
 
-| area | purpose |
-|------|---------|
+| File | Nature of Assistance |
+|------|---------------------|
+| `src/config/config.py` | I asked GenAI to review it. It suggested using `pydantic.BaseModel` for cleaner type-safe fields. I reviewed the suggestion and applied it. |
+| `src/utils/rewards.py` | GenAI pointed out unused parameters and missing imports after I asked for a code check. I cleaned them up. |
+| `app.py` | Had a typo (`form` → `from`) and missing references to `Grid`/`Action`/`visualise_policy`. GenAI spotted these when I asked it to verify the file compiled. |
+| `notebooks/01-assignment-3.ipynb` | I wrote all cells. GenAI suggested fixing one parameter name, and adding `plt.savefig` calls. I reviewed each change before applying. |
 
-### 2.2 report editing
+### 2.2 Documentation
 
-| section | how genai was used |
-|---------|-------------------|
-
-the report text was written by me. genai was used for editing, formatting, and layout only
-
-### 2.3 documentation and readme
-
-| file | purpose |
-|------|---------|
-| `README.md` | updated project structure, usage instructions, results table |
-| `docs/03-deliverables/01-report.pdf` | converted report markdown to pdf using pymupdf library |
+| File | Nature of Assistance |
+|------|---------------------|
+| `requirements.txt` | GenAI noted that `python-dotenv` was unused because it suggested using `pydantic.BaseModel`. I removed it after verifying. |
+| `README.md` | I wrote the content. GenAI helped with formatting the project structure tree and results table. |
+| `docs/03-deliverables/01-report.pdf` | I wrote the content. GenAI was used only after the fact to clean up Markdown formatting, and structure figure references. |
 
 ---
 
-## 3. declaration
+## 3. Declaration
 
-1. all code was written and understood by me. genai was used for debugging, refactoring, config fixing, and formatting
-2. all ideas, analysis, and results in the report were written by me. genai was used only for editing, formatting tables, and layout
+In accordance with Queen's University academic integrity policies and the course policy on gen AI tools:
 
----
-
-## 4. queen's university academic integrity
-
-this disclosure is made in accordance with queen's university academic integrity policies and the course policy on generative ai tools
+1. **I wrote and understand all algorithm code**   
+GenAI was used only for debugging suggestions, and code review not for writing code
+2. **I wrote and own all analysis and ideas in the report**   
+GenAI was used only for editing and formatting not for generating content
+3. Every GenAI suggestion was reviewed before being applied. Nothing was accepted blindly

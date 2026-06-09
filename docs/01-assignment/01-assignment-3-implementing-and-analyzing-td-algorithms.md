@@ -1,6 +1,6 @@
 # Assignment 3: Implementing and Analyzing TD Algorithms    
 Due: Tuesday June 2, before midnight
- 
+
 ## Objective: 
 To gain hands-on experience in implementing SARSA and Q-learning algorithms in gridworld.
 
@@ -24,4 +24,3 @@ To gain hands-on experience in implementing SARSA and Q-learning algorithms in g
 - Rewards: -5 for bumping into a wall, +10 for reaching the goal, and 0 otherwise.
 - Discount factor: 𝛾=0.9
 - Note: You are given a code snippet. Feel free to use it or use your own implementation.
- 
