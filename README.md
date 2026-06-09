@@ -39,10 +39,10 @@ Implementation and analysis of two fundamental TD control algorithms **SARSA** (
 
 A 10-column × 9-row grid with wall cells (-1), empty cells (0, reward 0), and a single goal cell (+10). The agent starts at the top-left interior and must navigate around walls to reach the goal. Bumping into a wall incurs a penalty of -5 and the agent stays in place. Reaching the goal yields +10 and resets to the start state.
 
-- **states** — each (row, col) position on the grid
-- **actions** — up (0), right (1), down (2), left (3)
-- **rewards** — -5 for walls, +10 for goal, 0 otherwise
-- **discount factor** — γ = 0.9
+- **states** - each (row, col) position on the grid
+- **actions** - up (0), right (1), down (2), left (3)
+- **rewards** - -5 for walls, +10 for goal, 0 otherwise
+- **discount factor** - γ = 0.9
 - **grid layout** (9 rows × 10 cols):
 
 ```
@@ -63,11 +63,11 @@ A 10-column × 9-row grid with wall cells (-1), empty cells (0, reward 0), and a
 
 ### SARSA (on-policy)
 
-At each step the agent picks action *A'* from *S'* using the **same** ε-greedy policy. The update then uses *Q(S', A')* — the value of the action actually taken next. Because both the behaviour and target policies are identical, SARSA learns action values conditioned on exploration.
+At each step the agent picks action *A'* from *S'* using the **same** ε-greedy policy. The update then uses *Q(S', A')* - the value of the action actually taken next. Because both the behaviour and target policies are identical, SARSA learns action values conditioned on exploration.
 
 ### Q-learning (off-policy)
 
-The update uses **max<sub>a'</sub> Q(S', a')** — the greedy value of the best action from *S'*, regardless of what the agent actually does next. The behaviour policy remains ε-greedy (for exploration), but the target is always greedy. This decoupling lets Q-learning converge to the optimal Q* even while exploring.
+The update uses **max<sub>a'</sub> Q(S', a')** - the greedy value of the best action from *S'*, regardless of what the agent actually does next. The behaviour policy remains ε-greedy (for exploration), but the target is always greedy. This decoupling lets Q-learning converge to the optimal Q* even while exploring.
 
 ---
 
