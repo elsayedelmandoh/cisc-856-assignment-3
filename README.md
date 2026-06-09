@@ -1,6 +1,6 @@
 # cisc 856 assignment 3 — implementing and analyzing td algorithms
 
-elsayed elmandouh — 20596379 — reinforcement learning — queen's university
+elsayed elmandouh - 20596379 - reinforcement learning - queen's university
 
 [![github](https://img.shields.io/badge/GitHub-elsayedelmandoh-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/elsayedelmandoh/cisc-856-assignment-3)
 [![x](https://img.shields.io/badge/X-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/aangpy)
@@ -24,7 +24,7 @@ elsayed elmandouh — 20596379 — reinforcement learning — queen's university
 
 ## overview
 
-Implementation and analysis of two fundamental TD control algorithms — **SARSA** (on-policy) and **Q-learning** (off-policy) — in a 10×9 gridworld environment with walls, a start state, and a goal state.
+Implementation and analysis of two fundamental TD control algorithms **SARSA** (on-policy) and **Q-learning** (off-policy) in a 10×9 gridworld environment with walls, a start state, and a goal state.
 
 ### algorithms implemented
 
@@ -137,7 +137,9 @@ cisc-856-assignment-3/
     ├── 02-results/             # generated figures
     └── 03-deliverables/
         ├── 01-report.md        # full report
-        └── 02-ai-usage.md      # AI usage disclosure
+        ├── 01-report.pdf
+        ├──2-ai-usage.md        # AI usage disclosure
+        └── 02-ai-usage.pdf
 ```
 
 ---
@@ -157,9 +159,9 @@ Q-learning achieves higher average reward because its off-policy update converge
 
 The epsilon-sweep experiment (ε = 0.1, 0.5, 1.0) reveals:
 
-- **ε = 0.1** — best overall performance for both algorithms. Low exploration means the agent spends most of its time exploiting learned values, leading to faster convergence and higher reward.
-- **ε = 0.5** — moderate exploration slows convergence. The agent takes random actions half the time, accumulating more wall penalties.
-- **ε = 1.0** — fully random behaviour. Neither algorithm can converge meaningfully; reward hovers near zero.
+- **ε = 0.1** - best overall performance for both algorithms. Low exploration means the agent spends most of its time exploiting learned values, leading to faster convergence and higher reward.
+- **ε = 0.5** - moderate exploration slows convergence. The agent takes random actions half the time, accumulating more wall penalties.
+- **ε = 1.0** - fully random behaviour. Neither algorithm can converge meaningfully; reward hovers near zero.
 
 ### figures
 
@@ -179,11 +181,11 @@ The epsilon-sweep experiment (ε = 0.1, 0.5, 1.0) reveals:
 
 ## report
 
-full report at [`docs/03-deliverables/01-report.md`](docs/03-deliverables/01-report.md).
+full report at [`docs/03-deliverables/01-report.pdf`](docs/03-deliverables/01-report.pdf).
 
 ---
 
 ## author
 
-elsayed elmandoh — nlp engineer — [linktree](https://linktr.ee/elsayedelmandoh)
+elsayed elmandoh - nlp engineer - [linktree](https://linktr.ee/elsayedelmandoh)
 
